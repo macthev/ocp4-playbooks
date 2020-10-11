@@ -21,7 +21,8 @@ if os.path.isfile('/tmp/chrony.conf.tmp'):
                 'source': 'data:text/plain;charset=utf-8;base64,' + chrony_b64,
                 'verification': {}
                 },
-            'overwrite': True
+            'overwrite': True,
+            "filesystem": "root"
         })
 
 ignition['storage']['files'] = files;
